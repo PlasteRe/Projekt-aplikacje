@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item android:title="Strona główna"
+            android:id="@+id/home"></item>
+
+        <item android:title="Wyślij sms"
+            android:id="@+id/sms"></item>
+
+    </group>
+
+</menu>

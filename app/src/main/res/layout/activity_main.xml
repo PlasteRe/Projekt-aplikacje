@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/tlo">
+
+    <CheckBox
+        android:id="@+id/check_wybierz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:text="Wycieczka"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/check_wybierz"/>
+
+    <Spinner
+        android:id="@+id/spinner_kraje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/check_wybierz"
+        android:background="@drawable/bg_spinner_kraj"/>
+
+
+    <CheckBox
+        android:id="@+id/check_dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/spinner_kraje"/>
+
+    <TextView
+        android:text="Ilość dni"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/check_dni"
+        android:layout_below="@+id/spinner_kraje"/>
+
+    <Spinner
+        android:id="@+id/spinner_dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/check_dni"
+        android:background="@drawable/bg_spinner_kraj"/>
+
+    <CheckBox
+        android:id="@+id/check_osoby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/spinner_dni"/>
+
+    <TextView
+        android:text="Ilość osób"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/check_osoby"
+        android:layout_below="@+id/spinner_dni"/>
+
+    <Spinner
+        android:id="@+id/spinner_osoby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/check_osoby"
+        android:background="@drawable/bg_spinner_kraj"/>
+
+    <CheckBox
+        android:id="@+id/check_allinclusive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/spinner_osoby"/>
+
+    <TextView
+        android:text="All inclusive"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/check_allinclusive"
+        android:layout_below="@+id/spinner_osoby"/>
+
+    <Spinner
+        android:id="@+id/spinner_allinclusive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/check_allinclusive"
+        android:background="@drawable/bg_spinner_kraj"/>
+
+    <Button
+        android:id="@+id/btn_cena"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:text="OBLICZ CENĘ"
+        android:layout_below="@+id/spinner_allinclusive"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/text_cena"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btn_cena"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:text="Cena całkowita:"/>
+
+    <TextView
+        android:id="@+id/cena"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/btn_cena"
+        android:layout_toRightOf="@+id/text_cena"
+        android:text="0"
+        />
+
+</RelativeLayout>
